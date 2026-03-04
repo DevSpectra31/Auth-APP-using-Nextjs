@@ -48,7 +48,7 @@ export default function SignupPage(){
              <label htmlFor="password">password</label>
             <input className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600" type="text" id="password" placeholder="enter your password"value={user.password} onChange={(e)=>setUser({...user,password:e.target.value})}  />
             <button onClick={onSignup} className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600">{button ? "no signup" : "Signup"}</button>
-            <Link href="/login">visit login</Link>
+            <Link href="/profile">visit login</Link>
         </div>
     )
 }
