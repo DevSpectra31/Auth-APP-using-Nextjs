@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {connect} from "@/dbConfig/dbConfig";
 import { NextRequest,NextResponse } from "next/server";
 import bcrypt from "bcryptjs";

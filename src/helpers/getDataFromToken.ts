@@ -1,8 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { NextRequest } from "next/server";
+import { NextRequest ,NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
-
-
 export const getDatafromToken = (request : NextRequest) =>{
     try {
        const token = request.cookies.get("token")?.value || "";
