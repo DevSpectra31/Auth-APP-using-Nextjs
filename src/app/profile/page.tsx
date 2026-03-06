@@ -14,7 +14,7 @@ export default function ProfilePage() {
         try {
         await axios.get('/api/users/logout')
         toast.success('Logout successful ')
-        router.push('/login')
+       // router.push('/login')
         } catch (error : any ) {
             console.log(error.message);
             toast.success(error.message)
@@ -26,7 +26,7 @@ export default function ProfilePage() {
             <hr />
             <p>Profile page</p>
             <hr />
-            <button  className="bg-blue-500 mt-4 hover:bg-black-700 text-white  font-bold py-2 rounded" onClick={logout}>Logout</button>
+            <button  className="bg-blue-500 mt-4 hover:bg-orange-700 text-white  font-bold py-2 rounded" onClick={logout}>Logout</button>
             </div>
     )
 }

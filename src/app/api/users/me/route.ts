@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { getDatafromToken } from "@/helpers/getdatafromtoken";
+import { getDatafromToken } from "@/helpers/getDataFromToken";
 import { NextRequest,NextResponse } from "next/server";
 import { User } from "@/models/user.model";
 import {connect} from "@/dbConfig/dbConfig"

@@ -3,9 +3,7 @@ import mongoose from "mongoose";
 import { Trykker } from "next/font/google";
 export async function connect(){
     try {
-       await mongoose.connect(process.env.mongo_uri!,{
-        dbName:"Auth_APP"
-       })
+       await mongoose.connect(process.env.mongo_uri!,)
        const connection=mongoose.connection;
        connection.on('connected',()=>{
         console.log('MongoDB connected successfully');
