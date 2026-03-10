@@ -3,6 +3,7 @@ import { NextRequest,NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { User } from "@/models/user.model";
+import { Concert_One } from "next/font/google";
 
 
 connect();
@@ -14,6 +15,7 @@ export async function POST (request  : NextRequest){
         console.log(reqBody)
         //check if user exist
         const existeduser=await User.findOne({email});
+        console.log(existeduser)
         if(!existeduser){
             return NextResponse.json({error:"user does not exist"},{status:400})
         }
